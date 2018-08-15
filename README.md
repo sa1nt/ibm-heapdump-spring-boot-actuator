@@ -1,5 +1,7 @@
 # ibm-heapdump-spring-boot-actuator
-A lib to make the Spring Boot Actuator `/actuator/heapdump` endpoint work on IBM JRE
+A library that that makes the Spring Boot Actuator `/actuator/heapdump` endpoint work both on IBM J9 JVM and on HotSpot JVM. 
+
+First tries to see if the app is on J9 JVM, and falls back to Spring Boot default if it doesn't seem so. 
 
 # Usage
 
@@ -13,17 +15,17 @@ A lib to make the Spring Boot Actuator `/actuator/heapdump` endpoint work on IBM
 </dependency>
 ```
 
-2. Configure `IBMHeapdumpMvcEndpoint` bean
+2. Configure `J9HeapdumpMvcEndpoint` bean
 ```
-import com.github.sa1nt.ibmheapdump.IBMHeapdumpMvcEndpoint;
+import com.github.sa1nt.ibmheapdump.J9HeapdumpMvcEndpoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class IbmHeapdumpConfiguration {
+public class IBMHeapdumpConfiguration {
     @Bean
-    public IBMHeapdumpMvcEndpoint ibmHeapdumpMvcEndpoint() {
-        return new IBMHeapdumpMvcEndpoint();
+    public J9HeapdumpMvcEndpoint ibmHeapdumpMvcEndpoint() {
+        return new J9HeapdumpMvcEndpoint();
     }
 }
 ```
