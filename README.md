@@ -9,7 +9,7 @@ First tries to see if the app is on J9 JVM, and falls back to Spring Boot defaul
 1. Add the artifact as a dependency
 ```
 <dependency>
-    <groupId>com.github.sa1nt</groupId>
+    <groupId>io.github.sa1nt</groupId>
     <artifactId>ibm-heapdump-spring-boot-actuator</artifactId>
     <version>0.2</version>
 </dependency>
@@ -17,7 +17,7 @@ First tries to see if the app is on J9 JVM, and falls back to Spring Boot defaul
 
 2. Configure `J9HeapdumpMvcEndpoint` bean
 ```
-import com.github.sa1nt.ibmheapdump.J9HeapdumpMvcEndpoint;
+import io.github.sa1nt.ibmheapdump.J9HeapdumpMvcEndpoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

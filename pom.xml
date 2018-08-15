@@ -10,9 +10,9 @@
         <version>1.5.14.RELEASE</version>
     </parent>
 
-    <groupId>com.github.sa1nt</groupId>
+    <groupId>io.github.sa1nt</groupId>
     <artifactId>ibm-heapdump-spring-boot-actuator</artifactId>
-    <version>0.3</version>
+    <version>0.5</version>
 
     <dependencies>
         <dependency>

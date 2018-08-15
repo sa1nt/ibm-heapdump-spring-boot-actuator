@@ -1,4 +1,4 @@
-package com.github.sa1nt.ibmheapdump;
+package io.github.sa1nt.ibmheapdump;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
