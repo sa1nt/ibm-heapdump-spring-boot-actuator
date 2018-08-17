@@ -92,5 +92,6 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
-/ibm-heapdump-spring-boot-actuator.iml
-/ibm-heapdump-spring-boot-actuator.ipr
+
+*.iml
+*.ipr
