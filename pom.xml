@@ -12,12 +12,33 @@
 
     <groupId>io.github.sa1nt</groupId>
     <artifactId>ibm-heapdump-spring-boot-actuator</artifactId>
-    <version>0.7</version>
+    <version>0.8</version>
     <packaging>jar</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>A lib to make the Spring Boot Actuator `/actuator/heapdump` endpoint work on IBM JRE </description>
     <url>https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/sa1nt/ibm-heapdump-spring-boot-actuator.git</connection>
+        <developerConnection>scm:git:ssh://github.com:sa1nt/ibm-heapdump-spring-boot-actuator.git</developerConnection>
+        <url>https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator/tree/master</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Anatolijs Mozgovs</name>
+            <email>anatolijs.mozgovs@gmail.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,8 +62,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <target>1.8</target>
-                    <source>1.8</source>
+                    <target>1.6</target>
+                    <source>1.6</source>
                 </configuration>
             </plugin>
 
@@ -71,6 +92,7 @@
                     </execution>
                 </executions>
             </plugin>
+
 <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
