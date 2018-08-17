@@ -5,13 +5,12 @@ First tries to see if the app is on J9 JVM, and falls back to Spring Boot defaul
 
 # Usage
 
-0. Clone the repo and run `mvn clean install` to make available in the local Maven repository
 1. Add the artifact as a dependency
 ```
 <dependency>
     <groupId>io.github.sa1nt</groupId>
     <artifactId>ibm-heapdump-spring-boot-actuator</artifactId>
-    <version>0.2</version>
+    <version>0.8</version>
 </dependency>
 ```
 
@@ -29,3 +28,8 @@ public class IBMHeapdumpConfiguration {
     }
 }
 ```
+
+# Build
+
+1. Clone the repo
+2. Run `mvn clean package`
