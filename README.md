@@ -5,6 +5,19 @@ First tries to see if the app is on J9 JVM, and falls back to Spring Boot defaul
 
 # Usage
 
+## Use the [Spring Boot starter](https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator-auto-starter) 
+
+1. Add the Starter dependency to POM
+```
+<dependency>
+    <groupId>io.github.sa1nt</groupId>
+    <artifactId>ibm-heapdump-spring-boot-actuator-starter</artifactId>
+    <version>0.8</version>
+</dependency>
+```
+
+## Configure it yourself
+
 1. Add the artifact as a dependency
 ```
 <dependency>
